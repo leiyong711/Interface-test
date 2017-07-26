@@ -1,6 +1,6 @@
 # !/usr/bin/env python
 # -*- coding:utf-8 -*-
-# project name: Interface-test
+# project name: rw_data-test
 # author: "Lei Yong" 
 # creation time: 2017/6/8 0008 14:38
 # Email: leiyong711@163.com
@@ -8,7 +8,7 @@ import xlrd
 
 
 def excel():
-    fname = "Case\\test.xlsx"
+    fname = "..\\Case\\test.xlsx"
     bk = xlrd.open_workbook(fname)
     try:
         sh = bk.sheet_by_name('Sheet1')
@@ -30,5 +30,6 @@ def excel():
         a.append(c)
     return a
 #     print a
-a = excel()
-print a[1][0]
+if __name__ == "__main__":
+    a = excel()
+    print a[2]
