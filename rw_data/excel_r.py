@@ -18,7 +18,7 @@ def excel():
     nrows = sh.nrows
     # 获取列数
     ncols = sh.ncols
-    print (nrows), (ncols)
+    print '用例行数：%s  用例列数：%s' % (nrows, ncols)
     a = []
     for i in range(0, nrows):
         c = sh.row_values(i)

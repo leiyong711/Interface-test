@@ -33,7 +33,7 @@ class apc:
         ws = w.add_sheet('Hey, Hades')  #创建一个工作表
         # ws = copy('..\\Case\\test.xlsx')
         pc = ks()
-        print pc
+        # print pc
         for i in range(len(pc)):
             for j in range(len(pc[i])):
             #     ws.write(i,j,aps[j]) #在1行1列写入bit
